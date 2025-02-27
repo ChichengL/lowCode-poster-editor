@@ -32,3 +32,43 @@
 - RESTful API
 - H5页面SSR
 组件库
+![image](https://files.catbox.moe/rm0g0i.png)
+
+
+海报的组成：
+- 背景，图片或者纯色
+- 元素
+	- 由各种不同的元素组成
+	- 位置(props)
+	- 展示(props)
+可能的数据结构
+```json
+{
+	"page": {
+		"title": "about us",
+		"props": {
+			"backgroundImage": "",
+			"backgroundColor": "",
+			"backgroundPosition": ""
+		}
+	},
+	"components": [
+		{
+			"name": "header",
+			//因为可能存在多个相同的组件，因此需要id来进行区分
+			"id": 1,
+			"props": {
+				"left": "10px",
+				"top": "10px",
+				"text": "Welcome to our website",
+				"fontSize": "24px",
+				"fontFamily": ""
+			}
+		}
+	]
+}
+
+```
+
+数据流转关系
+![image](https://files.catbox.moe/rm0g0i.png)
