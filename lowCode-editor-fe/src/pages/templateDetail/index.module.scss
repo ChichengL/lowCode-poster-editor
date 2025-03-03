@@ -1,0 +1,45 @@
+.templateDetail {
+	padding: 40px 0;
+	width: 100%;
+	height: 100%;
+
+	.layout {
+		background: transparent;
+		height: 50%;
+	}
+
+	.content {
+		display: flex;
+		margin: 0 auto;
+		padding: 0 24px;
+		gap: 40px;
+		width: 700px;
+	}
+
+	.leftPanel {
+		flex: 1;
+	}
+
+	.rightPanel {
+		flex: 0 0 200px;
+		display: flex;
+		align-items: center;
+
+		.buttonGroup {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
+	.templateCard {
+		margin-bottom: 0;
+
+		.image {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+/* 全局样式重置，将所有元素的 padding 和 margin 设置为 0 */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+#root {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}

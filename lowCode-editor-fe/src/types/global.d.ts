@@ -1,15 +1,15 @@
 declare module "@/*" {
-  // 自动推导路径类型
-  const value: any;
-  export default value;
+	// 自动推导路径类型
+	const value: any;
+	export default value;
 }
 
 declare module "@components/*" {
-  const value: any;
-  export default value;
+	const value: any;
+	export default value;
 }
 
 declare module "@pages/*" {
-  const value: any;
-  export default value;
+	const value: any;
+	export default value;
 }
