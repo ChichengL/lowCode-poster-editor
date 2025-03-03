@@ -62,17 +62,6 @@ const App: React.FC = () => {
           <p className={styles.subText}>只需替换文字和图片，一键自动生成H5</p>
         </div>
 
-        {/* 新增功能卡片部分 */}
-        <Row gutter={24} className={styles.featureRow}>
-          <Col span={8}>
-            <Card title="专注H5始终如一" bordered={false}>
-              <h3>三年保持行业领先</h3>
-              <p>一键生成，一分钟轻松制作</p>
-            </Card>
-          </Col>
-          {/* 其他功能卡片... */}
-        </Row>
-
         <TemplateList data={templateData} />
       </Content>
 

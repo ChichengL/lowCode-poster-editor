@@ -172,6 +172,7 @@
   },
   "active": "f7f9003a563d1ca0",
   "lastOpenFiles": [
+    "lowCode-editor-fe/src/page/editor/index.scss",
     "lowCode-editor-fe/src/types/index.ts",
     "lowCode-editor-fe/src/types/index.d.ts",
     "lowCode-editor-fe/src/index.d.ts",
@@ -182,7 +183,6 @@
     "lowCode-editor-fe/src/components/templateList/index.module.scss",
     "lowCode-editor-fe/src/components/templateList/index.tsx",
     "lowCode-editor-fe/src/components/templateList",
-    "lowCode-editor-fe/src/page/home/index.module.scss",
     "lowCode-editor-fe/src/assets/react.svg",
     "lowCode-editor-fe/public/vite.svg",
     "lowCode-editor-fe/README.md",
