@@ -1,8 +1,8 @@
 import React from "react";
-import { Layout, Input, Button, Card, Col, Row } from "antd";
+import { Layout, Input, Button } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import TemplateList from "@/components/TemplateList";
-import styles from "./App.module.scss";
+import TemplateList from "@components/template-list";
+import styles from "./index.module.scss";
 
 const { Header, Content, Footer } = Layout;
 
@@ -13,7 +13,8 @@ const templateData = [
     description: "一键生成专业影业海报",
     author: "乐高5632",
     views: 2838,
-    thumbnail: "https://place-holder.com/300x200",
+    thumbnail:
+      "https://static.imooc-lego.com/upload-files/screenshot-889755.png",
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const templateData = [
     description: "快速创建在线教育课程封面",
     author: "慕课学院",
     views: 1542,
-    thumbnail: "https://place-holder.com/300x200",
+    thumbnail:
+      "https://static.imooc-lego.com/upload-files/screenshot-889755.png",
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const templateData = [
     description: "三分钟生成商品促销海报",
     author: "电商达人007",
     views: 3567,
-    thumbnail: "https://place-holder.com/300x200",
+    thumbnail:
+      "https://static.imooc-lego.com/upload-files/screenshot-889755.png",
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ const templateData = [
     description: "企业招聘会专用模板设计",
     author: "HR联盟",
     views: 2289,
-    thumbnail: "https://place-holder.com/300x200",
+    thumbnail:
+      "https://static.imooc-lego.com/upload-files/screenshot-889755.png",
   },
 ];
 
@@ -57,11 +61,6 @@ const App: React.FC = () => {
       </Header>
 
       <Content className={styles.contentArea}>
-        <div className={styles.contentHeader}>
-          <h3>海量精彩设计一键生成</h3>
-          <p className={styles.subText}>只需替换文字和图片，一键自动生成H5</p>
-        </div>
-
         <TemplateList data={templateData} />
       </Content>
 

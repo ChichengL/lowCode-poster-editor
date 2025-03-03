@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Button } from "antd";
-import styles from "./styles.module.scss";
+import styles from "./index.module.scss";
 import { TemplateItem } from "../../types";
 
 interface TemplateListProps {
