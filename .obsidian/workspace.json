@@ -170,8 +170,9 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "f7f9003a563d1ca0",
+  "active": "2eefda50ea2ae98b",
   "lastOpenFiles": [
+    "lowCode-editor-fe/src/pages/templateDetail/index.module.scss",
     "lowCode-editor-fe/src/pages/editor/index.module.scss",
     "lowCode-editor-fe/src/pages/templateDetail/index.tsx",
     "lowCode-editor-fe/src/pages/home/index.tsx",
@@ -182,7 +183,6 @@
     "lowCode-editor-fe/src/pages/home",
     "lowCode-editor-fe/src/pages/editor",
     "lowCode-editor-fe/src/pages",
-    "lowCode-editor-fe/src/components/template-list/index.tsx",
     "lowCode-editor-fe/src/assets/react.svg",
     "lowCode-editor-fe/public/vite.svg",
     "lowCode-editor-fe/README.md",
