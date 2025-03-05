@@ -18,7 +18,15 @@
 .imageContainer {
 	position: relative;
 	overflow: hidden;
+	height: 300px; // 新增固定高度
 	max-height: 100%;
+
+	.image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover; // 确保图片比例适配
+		transition: transform 0.3s ease;
+	}
 
 	transition: transform 0.3s ease; // 新增过渡动画
 

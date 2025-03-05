@@ -21,7 +21,7 @@ const TemplateList = ({ data }: TemplateListProps) => {
 							<div className={styles.imageContainer}>
 								<img
 									alt={item.title}
-									src={item.thumbnail}
+									src={item.coverImg}
 									className={styles.image}
 								/>
 								<div className={styles.overlay}>
@@ -44,7 +44,7 @@ const TemplateList = ({ data }: TemplateListProps) => {
 						<Card.Meta title={item.title} description={item.description} />
 						<div className={styles.cardMeta}>
 							<span>作者：{item.author}</span>
-							<span>浏览：{item.views}</span>
+							<span>浏览：{item.copiedCount}</span>
 						</div>
 					</Card>
 				</Col>
