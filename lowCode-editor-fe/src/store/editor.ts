@@ -12,5 +12,7 @@ interface ComponentData {
 }
 
 export const testComponents: ComponentData[] = [
-	{ id: uuidv4(), name: "text-1", props: { text: "hello1" } },
+	{ id: uuidv4(), name: "text", props: { text: "hello1" } },
+	{ id: uuidv4(), name: "text", props: { text: "hello22" } },
+	{ id: uuidv4(), name: "text", props: { text: "hello333" } },
 ];
