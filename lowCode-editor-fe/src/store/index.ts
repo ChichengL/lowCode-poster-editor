@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import useEditorStore, { EditorProps } from "./editor";
 
 export interface UserStoreProps {
 	isLogin: boolean;
@@ -17,6 +18,7 @@ export interface TemplateStoreProps {
 export interface GlobalDataStoreProps {
 	user: UserStoreProps;
 	templates: TemplateStoreProps[];
+	editor: EditorProps;
 	setUser: (user: UserStoreProps) => void;
 	setTemplates: (templates: TemplateStoreProps[]) => void;
 	login: () => void;
@@ -76,6 +78,7 @@ const GlobalDataStore = create<GlobalDataStoreProps>((set, get) => ({
 		isLogin: false,
 	},
 	templates: templateData,
+	editor: useEditorStore(),
 	setUser: (user: UserStoreProps) => set({ user }),
 	setTemplates: (templates: TemplateStoreProps[]) => set({ templates }),
 	login: () => set({ user: { isLogin: true, userName: "vvvuk" } }),

@@ -12,7 +12,10 @@ const Editor: React.FC = () => {
 					组件列表
 				</Layout.Sider>
 				{/* 中间内容区域 */}
-				<Layout.Content className={styles["canvas"]}>画布</Layout.Content>
+				<Layout.Content className={styles["canvas"]}>
+					<p>画布区域</p>
+					<div id="canvas-area" className="preview-list"></div>
+				</Layout.Content>
 				{/* 右侧边栏 */}
 				<Layout.Sider width={200} className={styles["sider-right"]}>
 					属性配置
