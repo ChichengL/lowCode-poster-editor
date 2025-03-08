@@ -1,8 +1,10 @@
 import { Layout } from "antd";
 import React from "react";
 import styles from "./index.module.scss";
-
+import useEditorStore from "../../store/editor";
 const Editor: React.FC = () => {
+	const components = useEditorStore((state) => state.components);
+
 	return (
 		<Layout className={styles["container"]}>
 			<Layout.Header className={styles["header"]}>编辑器</Layout.Header>
@@ -14,7 +16,11 @@ const Editor: React.FC = () => {
 				{/* 中间内容区域 */}
 				<Layout.Content className={styles["canvas"]}>
 					<p>画布区域</p>
-					<div id="canvas-area" className="preview-list"></div>
+					<div id="canvas-area" className="preview-list">
+						{components.map((item) => {
+							return item.name;
+						})}
+					</div>
 				</Layout.Content>
 				{/* 右侧边栏 */}
 				<Layout.Sider width={200} className={styles["sider-right"]}>

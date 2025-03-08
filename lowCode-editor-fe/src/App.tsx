@@ -13,12 +13,12 @@ import styles from "./index.module.scss";
 import Home from "@pages/home";
 import Editor from "@pages/editor";
 import TemplateDetail from "@pages/templateDetail";
-import GlobalDataStore from "./store";
+import { useUserStore } from "./store";
 
 const RootLayout = () => {
 	// 获取当前匹配的路由信息
 	const matches = useMatches();
-	const { login, logout, user } = GlobalDataStore();
+	const { login, logout, isLogin } = useUserStore();
 
 	// 从最后一个匹配项中获取 meta
 	const { meta } =
@@ -30,7 +30,7 @@ const RootLayout = () => {
 	const withHeader = meta?.withHeader ?? true;
 
 	const handleClick = () => {
-		if (user.isLogin) {
+		if (isLogin) {
 			logout();
 			message.success("退出登录");
 		} else {
@@ -51,7 +51,7 @@ const RootLayout = () => {
 							className={styles.searchInput}
 						/>
 						<Button type="primary" onClick={handleClick}>
-							{user.isLogin ? "退出登录" : "登录"}
+							{isLogin ? "退出登录" : "登录"}
 						</Button>
 					</div>
 				</Header>

@@ -2,11 +2,12 @@ import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Button, Card, Layout, Spin } from "antd";
 import styles from "./index.module.scss";
-import GlobalDataStore from "../../store";
+import { useTemplateStore } from "../../store";
 
 function TemplateDetail() {
 	const { id = "" } = useParams();
-	const template = GlobalDataStore().getTemplateById(Number(id));
+	const { getTemplateById } = useTemplateStore();
+	const template = getTemplateById(Number(id));
 	const navigate = useNavigate();
 	const handleDownload = () => {
 		if (!template) return;

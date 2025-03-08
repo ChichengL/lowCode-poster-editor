@@ -11,10 +11,12 @@
             "id": "191676d4efabd5f1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
             }
           }
         ]
@@ -165,8 +167,10 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "2eefda50ea2ae98b",
+  "active": "191676d4efabd5f1",
   "lastOpenFiles": [
+    "lowCode-editor-fe/src/store/template.ts",
+    "lowCode-editor-fe/src/store/user.ts",
     "lowCode-editor-fe/_tmp_16452_999840eb0b78edd6b5ba48b7a5ea2bca",
     "lowCode-editor-fe/src/store/editor.ts",
     "README.md",
@@ -177,8 +181,6 @@
     "lowCode-editor-fe/src/pages/home/index.module.scss",
     "lowCode-editor-fe/src/pages/editor/index.tsx",
     "lowCode-editor-fe/src/pages/editor/index.scss",
-    "lowCode-editor-fe/src/pages/templateDetail",
-    "lowCode-editor-fe/src/pages/home",
     "lowCode-editor-fe/src/assets/react.svg",
     "lowCode-editor-fe/public/vite.svg",
     "lowCode-editor-fe/README.md",

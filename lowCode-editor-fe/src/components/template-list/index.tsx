@@ -37,7 +37,8 @@ const TemplateList = ({ data }: TemplateListProps) => {
 							<Button
 								type="primary"
 								className={styles.cardButton}
-								key={item.id}>
+								key={item.id}
+								onClick={() => navigate(`/editor?${item.id}`)}>
 								立即使用
 							</Button>,
 						]}>
